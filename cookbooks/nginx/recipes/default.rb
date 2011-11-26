@@ -18,7 +18,8 @@
 # limitations under the License.
 #
 
-package "nginx"
+package "nginx" do
+end
 
 directory node[:nginx][:log_dir] do
   mode 0755

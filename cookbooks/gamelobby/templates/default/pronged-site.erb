@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  
+<% @pieces.each do |piece| %>
+  location <%= piece[:root] %> {
+    proxy_pass http://localhost:<%= piece[:port] %>
+<% if piece[:streaming] %>
+    proxy_buffering off;
+    proxy_read_timeout 1000s;
+<% end %>
+  }
+<% end %>
+}

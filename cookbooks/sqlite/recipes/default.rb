@@ -18,9 +18,10 @@
 #
 
 package "sqlite3" do
-  action :upgrade
+  package_name 'libsqlite3-dev'
+  action :install
 end
 
 package "sqlite3-doc" do
-  action :upgrade
+  action :install
 end
