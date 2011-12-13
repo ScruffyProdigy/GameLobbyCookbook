@@ -13,9 +13,10 @@
     "my_app_database_slave"
   ],
   "database_master_role": [
-    "my_app_database_master"
+    "game-lobby"
   ],
-  "repository": "git@github.com:HairyMezican/GameLobby.git",
+  "repository": "https://github.com/HairyMezican/GameLobby.git",
+  "deploy_key": "-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAwzcK5ehI019E864+gM5AlmIyvAgU0HwaVY3X4GlrC6Sdb8TX\nOMLCZc3UxuSuY47UqelSdK6DFWE0BQgJl+ailmSb8I7aEl4kddATj5FKI6X6JWbc\n9YGRtJm3ThJR+7LLkGFGc4GUPMLQbpxJcgAHqinhXxOEcgGneFqji1WoFUaLYg3A\n0MK6HQWDrnpaq+xLyhJrzorgmb3wOAVJFoNNEAOcwFb/nsXSNYkJ+Y6Ag9hCrUIq\n+AI2m45ASmHMT5sAO2zJwrkoUUg47GWLvQzkLucpsnxJNRSE/Slbu89lseLIavKB\nKlvSZ6P/WFrFEfrWhFwIpr2AEmTcPE6D6Tc/SQIBIwKCAQBp+U8PF7KBX5p1p7uH\nwGw0YTF8BGMSF3wCjtRGn6CCqdHO9dPrnO0v82Tg/8xh7nNyLjQTdK2PQ2Vh0SnH\nfTOwukYGPutpDojSPcF50odVLjdWIeWp2J+N7Qu8qtwMSx4MjJP1j3xbf7L6N5WV\nqD6s1OgPCphbJXgrZGdo5Vs+vvEwFRYM44w7H3GYmdFzGT1BujHHQ8H9ZeAE12iR\n1v2t4VtZ0HTlGVQpXJMp14ws1ftLaPuMwDwULhTDopbrrr6sBvMj2QKGaHzYJBkr\niqvnC3IkoK+hbqPvGt5AZAACSuLwUe+51uRu9D8CZ702XCUA0AX0ZQabRE/QrDml\nwARPAoGBAPiMTORmA/PRUFGz/AM7qKAG4A67mXUnmIWdzR2EULo4lcqXGqoWiiZe\nwt7PGadBeXNwDU1bhyIQM7+Z4zDRWh7hUnDJRich3bnLa9ttRFE1I90hXVclpdoC\nChByYO8X/je5jMCmQnDIEVFvp6V68tejEOme3qBkPhWmwyZ9FgaDAoGBAMkRZB+W\nXvnezB1aplxY30hlEUS+0usmGOjiJKDWYytTwTdbXgTvrrJ9G6LP58mRdlErjmyL\nuqXfcWfpzF0PeD6+5R/SXINFS7QZjsVQas+ThcslOlA25jmg+0YWL4QO7tOzVY2n\nBspMcm+72RPiDWnfy+uj/Fo/Sp9YhAC0EFlDAoGBAOpYZcFngBHFWlupsxj9vD8c\nbNqw4SVROAjz3qbNNivsNXXe7UFIc6CFO2Rc3axTrQZw9plk7SAd56YGH1np9eKZ\n7qTbB6E9MCQ002h890VAu2oYJM6ClQ9hAizDnTkz4Q/4Fv7IpQtAStfBC8fo85gd\nZ7ezDGtXMzj8UZlRXejhAoGBAJscC2jTFhE21/ljL+DW2CHnkPqElBR8eZ21xHwT\nGU1PPUf2BrNZz+jG6W74J9YCf9g3iyCJDFQSxTLnjwX1/ay/JcgXTq5oqB04SZDm\nQ8Szobn4JauYELAdGZx3g72lHqNP1Ei0DI1uLGTSvWccGPnnKEgQyfx597zAoFhQ\nZGIdAoGAC3aSNKLlDqi+tudvhvEx0TkATNbIIbuTr5zwRMlnL/eWusBYRJzLOjQ1\nIM61X+nWD+2+uZ7OAfxbQX8Qe8De1KM5MtWn7Tzpq8pwHzNH9O+uhwBJVeQTdi3P\n+OgL3nhx11qaSHszP5LBwyFivwWjkaVqyu5uuhHzvo2WWqObMKA=\n-----END RSA PRIVATE KEY-----\n",
   "revision": {
     "production": "master"
   },
@@ -34,16 +35,16 @@
       "timeout": 5000
     }
   },
-  "deploy_key": "uSOHwMUi+DTXu1AuA0FQhYznAFIxaKLRYL9gXK1pefamo6Juig7pr7eA3m7OWdMqrPuiuwkX+0zbEg21304P46engNJavY8boy1eYJhj7wt06AJ09accjjt9gcHBrlNOIqWykc8zHp/pm7xmuKi3k/NSc9xAGQniYAeXAmGORQfRYuqdO5CRW11NPtWeI6ZbUO3NwWvsSjIHgp2QqzmBkmj7bWE3svhGCa40Asl3r5V2v0YK3/zj1vi/MkbadI0RAbd3YPhLuqEeTMr+Olmv+4/4ZIVCFRmhXfxXvyziSaPiaJa7Ns82ZNYKoheby8ve3QrKjdBRcRqfByACRMw9cPJbp3up5t1dFuKTcYqwFv7NXUIQ5eOifZjuzgWG6dxUCX/6SoZi5UgZ5HvQy3TCNinkPRp0Tv63xeBIO4btBXZ8gH8fup//M44sBzzRQyWuLQ1Y4WrKE4x96V1cXYQYZEvaDFPoNdSn2PM/RihKeW8pbnvpYElpTAYUbwkdRYbfvFc/xcmJlaGm1Uhm+Bf/fuHcM+4vWb87CZ43isg4n5/dKLZAY02uuJESGiHJUwSbePL0Mgx81nBVIHwX2kv4LeA+iidrZt0h8L0kY4Z00pJR9uzcqyqEySIedws/t21JxVqhNUXe7oEOZ2KnMsQukFb6ii+cI5Go/+s+odGjt+LO28L+KRNa5qiEM3Di9Zp9N5gxqkg8UthKMcOD6m873UYoY8O6XDTVQMFZKEf8ZItuhBCQHul0UDLdhCjP5aU9SHTL+gKsi5eoYeId3f8k6kIMpuxtpGgKs2pWQftL2jtOjSgcGm/BX7fFtmqoJELaIc1V7Y2w3t7ePS+79ve1eiyhYWec02rSaSwo4A9ODvXeb8Ms0+g2XCR9ONoUAtGYlL9sE7HqOmTL0mdqjXWuTAmfz7ZoAvpLCcPptUGbVCJmFW6ZDtl+eAX8OsH7Qw47obIvcK5ts1wpGKRvC7505W/cfYxgj6hylgsaStbgwy6auHWsz5XJ1cM1ai2O1D7CK+aPC4YTZaUE234s1mImQ+OXl1pzRMcoSjR19XJ/QQ/8izD1wHED1BBOsk9LBi/2xmpBwmQ3s6c/v0E3IIQlD0T2zw2IyzkcpgF8g+QNBRnm9E9Do285xNptIdLaecWFiyEf0VE1jNUTqVO4/9W/MA3mffK1iAyIfWG7K5SXec2kMXXfElw/dnD48Gav4QJNiAa5cW1VgEBwjttU2KMGRz8WtV0i8Yq1CPQLDFi/Nn6v7/rPBqH9aa8gVLC3iWPGTvqNkg6PLrSIzaGItFwcO9cCVASepFLHnvLzB2FI8/GGemu4IOH/vkeztIo++m1+UtOqXoTIhM+yT+OlWBhAXZYsnIivNdDt9SmA9zupjJQaBq9vrn/SG4YTp9P/R3x84NgivLNWQjwXbBYhxZ/IALsGXcQU9ySNjZOmCRcxxWq1Liho7dSPeSJX7NgYm8/nhZ0XbZSDyzdvk6Zw6odmSTNeTkrRUjbJ60yB4VqVb414S8wQnobiqvJBOzUqpMlvMyY5Dh3boZoyJtnDGzrNswdXJcbYl0N+Zcgg7L8bSUOXXIwLG/iGTw==",
   "deploy_to": "/srv/gamelobby",
   "owner": "rails",
   "group": "rails",
   "gems": {
     "rails": "",
-    "sqlite3":"",
+    "sqlite3":"1.3.4",
     "haml":"",
     "bcrypt-ruby":"",
     "redis":"",
-    "jquery-rails":""
+    "jquery-rails":"",
+    "unicorn":""
   }
 }

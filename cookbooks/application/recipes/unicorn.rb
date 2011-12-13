@@ -26,7 +26,7 @@ node.default[:unicorn][:preload_app] = false
 node.default[:unicorn][:worker_processes] = [node[:cpu][:total].to_i * 4, 8].min
 node.default[:unicorn][:preload_app] = false
 node.default[:unicorn][:before_fork] = 'sleep 1' 
-node.default[:unicorn][:port] = '8080'
+node.default[:unicorn][:port] = ':8080'
 node.set[:unicorn][:options] = { :tcp_nodelay => true, :backlog => 100 }
 
 unicorn_config "/etc/unicorn/#{app['id']}.rb" do
@@ -36,6 +36,10 @@ unicorn_config "/etc/unicorn/#{app['id']}.rb" do
   preload_app node[:unicorn][:preload_app] 
   worker_processes node[:unicorn][:worker_processes]
   before_fork node[:unicorn][:before_fork] 
+  after_fork node[:unicorn][:after_fork] if node[:unicorn][:after_fork]
+  pid node[:unicorn][:pid] if node[:unicorn][:pid]
+  stderr_path node[:unicorn][:stderr_path] if node[:unicorn][:stderr_path]
+  stdout_path node[:unicorn][:stdout_path] if node[:unicorn][:stdout_path]
 end
 
 runit_service app['id'] do

@@ -1,10 +1,21 @@
+<% @pieces.each do |name,piece| %>
+upstream <%= name %> {
+<% if piece[:socket] %>
+  server unix:<%= piece[:socket] %>;
+<% else %>
+  server 127.0.0.1:<%= piece[:port] %>;
+<% end %>
+}
+<% end %>
+
 server {
   listen 80;
+  server_name  <%= node[:hostname] %>;
   
-<% @pieces.each do |piece| %>
+<% @pieces.each do |name,piece| %>
   location <%= piece[:root] %> {
-    proxy_pass http://localhost:<%= piece[:port] %>
-<% if piece[:streaming] %>
+    proxy_pass http://<%= name %>;
+<% if piece[:streaming]%>
     proxy_buffering off;
     proxy_read_timeout 1000s;
 <% end %>
