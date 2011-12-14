@@ -9,6 +9,3 @@ chef_server_url          "https://api.opscode.com/organizations/fastclash"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
-
-knife[:aws_access_key_id] = "AKIAJA3LG65453DQIHRA"
-knife[:aws_secret_access_key] =  "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"
