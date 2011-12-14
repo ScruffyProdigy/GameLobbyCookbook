@@ -14,7 +14,7 @@ server {
   
 <% @pieces.each do |name,piece| %>
   location <%= piece[:root] %> {
-    rewrite <%= piece[:root] %>(.*) /$1
+    rewrite <%= piece[:root] %>(.*) /$1;
     proxy_pass http://<%= name %>;
 <% if piece[:streaming]%>
     proxy_buffering off;
